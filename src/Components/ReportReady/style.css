@@ -1,0 +1,50 @@
+
+body{
+}
+.header-report-size {
+    width: 210mm;
+
+    height: 1200px;
+    background:  #DFCFBE;
+}
+
+.content-report-page {
+    padding: 0;
+    margin: 0;
+    height: 95%;
+}
+.content-doc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer-report-page-blue {
+    padding: 0;
+    height: 5%;
+    background-color:#7FCDCD;
+    float: bottom;
+
+
+}
+
+
+
+@page {
+    size:A4;
+    margin: 0;
+
+}
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+    .header-report-size {
+        height: 297mm;
+
+
+        background: white;
+    }
+
+
+}

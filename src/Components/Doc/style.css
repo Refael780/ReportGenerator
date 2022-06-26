@@ -1,0 +1,26 @@
+.content-doc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.content-report-page {
+    padding: 0;
+    margin: 0;
+    height: 95%;
+}
+@page {
+    size:A4;
+    margin: 0;
+
+}
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+
+
+
+}
