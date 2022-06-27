@@ -41,7 +41,7 @@ export default props => {
     const sectionRef = useRef(null)
     const [reportsList, setReportsList] = useState([{
         id: uuidv4(),
-        totalHeight: 1140,
+        totalHeight: 1090,
         sections: [],
         sectionsComponent: []
     }])
@@ -54,7 +54,7 @@ export default props => {
 
     // This use effect is occur  when there some change in the sectionComponent it check if all  the SectionComponents done with  rendering and make report by pages
     useEffect(() => {
-        let reportPage = {totalHeight: 1140, sectionsComponent: [], sectionOrderIndex: 0}
+        let reportPage = {totalHeight: 1090, sectionsComponent: [], sectionOrderIndex: 0}
         let reportPages = []
         if (isAllSectionComponentCreated(sections,sectionsComponent) && !isNotAllComponentReady(sectionsComponent) ) {
             for (let i = 0; i < sectionsComponent.length; i++) {
@@ -67,7 +67,7 @@ export default props => {
                     if (reportPage.sectionsComponent.length > 0) {
                         reportPages.push({...reportPage})
                     }
-                    reportPage = {totalHeight: 1140 - el.heightSection, sectionsComponent: []}
+                    reportPage = {totalHeight: 1090 - el.heightSection, sectionsComponent: []}
                     reportPage.sectionsComponent.push({...el})
                 }
             }
